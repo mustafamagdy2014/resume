@@ -11,7 +11,7 @@ app.set('public', __dirname + '/public');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.render('public/index.html');
+  response.render('public/index');
 });
 
 app.listen(app.get('port'), function() {
