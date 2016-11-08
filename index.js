@@ -10,7 +10,7 @@ process.env.PWD = process.cwd();
 
 //app.set('views', path.join(process.env.PWD, 'public'));
 
-app.use(express.static(path.join(process.env.PWD, 'views/pages')));
+app.use(express.static(path.join(process.env.PWD, '/views/pages')));
 
 //app.set('views', path.join(process.env.PWD, 'public'));
 
