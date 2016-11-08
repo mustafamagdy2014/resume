@@ -8,7 +8,7 @@ app.set('port', (process.env.PORT || 5000));
 
 process.env.PWD = process.cwd();
 
-app.set('views', path.join(process.env.PWD, 'public'));
+//app.set('views', path.join(process.env.PWD, 'public'));
 
 app.use(express.static(path.join(process.env.PWD, 'public')));
 
