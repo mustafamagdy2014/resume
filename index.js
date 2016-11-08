@@ -11,6 +11,7 @@ app.use(express.static(__dirname + '/public'));
 //app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
+	process.env.PWD = process.cwd();
   response.sendFile(path.join(process.env.PWD, '/public/index.html'));
 });
 
