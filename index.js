@@ -10,7 +10,7 @@ process.env.PWD = process.cwd();
 
 //app.set('views', path.join(process.env.PWD, 'public'));
 
-app.use(express.static(path.join(process.env.PWD, 'public')));
+app.use(express.static(path.join(process.env.PWD, 'views/pages')));
 
 //app.set('views', path.join(process.env.PWD, 'public'));
 
@@ -23,7 +23,7 @@ app.use(express.static(path.join(process.env.PWD, 'public')));
 
 app.get('/', function(request, response) {
 //response.sendFile('index.html', { root: process.env.PWD });
-  response.sendFile(path.join(process.env.PWD, '../public/index.html'));
+  response.sendFile(path.join(process.env.PWD, '/views/pages/index.html'));
 });
 
 app.listen(app.get('port'), function() {
