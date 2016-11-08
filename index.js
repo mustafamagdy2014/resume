@@ -22,8 +22,8 @@ app.use(express.static(path.join(process.env.PWD, 'public')));
 //app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-
-  response.sendFile(path.join(process.env.PWD, '/public/index.html'));
+response.sendFile('index.html', { root: process.env.PWD });
+ // response.sendFile(path.join(process.env.PWD, '/public/index.html'));
 });
 
 app.listen(app.get('port'), function() {
